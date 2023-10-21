@@ -4,10 +4,10 @@ fetch(API_URL,{
     method: "GET",
     headers: {
         "X-Auth-Token": "b337f2e7aaa141f38ab6fd54909b7e44",
-        // "Access-Control-Allow-Origin" : "http://localhost:8080",
-        // 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
-        // "Access-Control-Allow-Methods" : "GET,POST,PUT,DELETE,OPTIONS",
-        // "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+        "Access-Control-Allow-Origin" : "*",
+        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
+        "Access-Control-Allow-Methods" : "GET,POST,PUT,DELETE,OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
     }
 })
     .then(resp => resp.json())
